@@ -1,0 +1,30 @@
+{
+  "name": "test_nodejs",
+  "version": "1.0.0",
+  "description": "docker-compose up -d",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "puppeteer": "^1.12.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxinuss/test_nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxinuss/test_nodejs/issues"
+  },
+  "homepage": "https://github.com/maxinuss/test_nodejs#readme"
+}
