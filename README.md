@@ -15,7 +15,7 @@ We suggest using the following NPM modules to develop your apps:
 This app consist on 2 workers Ganymede and Themisto.
 You can run each one from them folder.
 
-## Goal
+### Goal
 The goal is having an app that will work as an on demand product crawler, with the following
 public API:
 POST /api/product/search
@@ -54,7 +54,7 @@ This endpoint will return a list of the search orders that exists in the databas
 This endpoint will receive a categoryId as a query string, and must return an array with all the
 products associated to the given category. If the category doesn't exists, it must return an error.
 
-## The flow
+### The flow
 - A request is received in the Ganymede endpoint "/api/product/search", and a new search
 order is created with status received. 
 - The main app must make a request to Themisto, so it can start crawling the website of the required provider. 
@@ -78,7 +78,7 @@ to a private API in Ganymede (using a token as authentication).
 - Finally, when the search order status is updated, Ganymede must make a request to the
 callbackUrl reporting the new status + the URL of the API to get all the order data.
 
-## Additional notes
+### Additional notes
 The provider we recommend you to use for this test is Easy (http://easy.com.ar/). Feel free to
 use eBay, Amazon, MercadoLibre or other eCommerces if you want to. You must create a test
 account and pass it to us on the repository README).
@@ -87,7 +87,7 @@ starting this test, we ask you to submit a simple schedule with estimations for 
 of this test, and also a date where you think you may present this finished to us.
 The endpoints must be delivered in a POSTman file, so we can test your app.
 
-### Developer notes:
+## Developer notes:
 
 - Selected provider: easy
 - User & Password provided in the e-mail.
